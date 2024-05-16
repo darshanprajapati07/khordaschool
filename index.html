@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Image Slider with Animation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hed">
+        <div class="title-bar">
+            <div class="logo">
+                <img src="KHORDA.jpg" alt="School Logo">
+            </div>
+            <div class="school-name">
+               Shree Khorda Primary School, Khorda
+               <br>
+               <p id="font">Empowering Minds, Building Futures,</p>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a> <span class="line">&#124;</span>
+                <a href="#">About</a> <span class="line">&#124;</span>
+                <a href="yp.html" target="_blank">Yearly Planning</a> <span class="line">&#124;</span>
+                <a href="#">Contact</a>
+            </div>
+        </div> 
+       <div>
+        <nav class="bottom-navbar"> 
+            <a href="school3.html" class="navbar-item" >HOME</a>
+            <a href="#" class="navbar-item" >ABOUT US</a>
+            <a href="student_zone.html" class="navbar-item" >STUDENT ZONE</a>
+            <a href="teachers.html" class="navbar-item" >TEACHERS</a>
+            <a href="khorda.pdf" class="navbar-item" target="_blank">ONLINE FORM</a> 
+            <a href="photo.html" class="navbar-item" >PHOTO-GALLRY</a>
+            <a href="feedback.html" class="navbar-item" >FEEDBACK</a>
+            <a href="#" class="navbar-item" >CONTACT US</a> 
+        </nav>
+       </div>
+    </div>
+<div class="slider-container">
+    <div>
+        <p class="jay">શિક્ષક માત્ર સફળતાનો માર્ગ જ બતાવી શકે છે, પરંતુ એ માર્ગ પર ચાલવાનું તમારે છે.</p>
+    
+    <!-- Slides -->
+    <div class="slide fade">
+        <img src="1.jpg" alt="Image 1">
+    </div>
+    <div class="slide fade">
+        <img src="2.jpg" alt="Image 2">
+    </div>
+    <div class="slide fade">
+        <img src="3.jpg" alt="Image 3">
+    </div>
+</div>
+    <!-- Navigation dots -->
+    <div class="dot-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+<div class="information-box">
+    <h2>Information</h2>
+    <div class="standard-boxes">
+        <div class="box" id="standard1" onclick="openStandard('standard1')">Standard 1</div>
+        <div class="box" id="standard2" onclick="openStandard('standard2')">Standard 2</div>
+        <div class="box" id="standard3" onclick="openStandard('standard3')">Standard 3</div>
+        <div class="box" id="standard4" onclick="openStandard('standard4')">Standard 4</div>
+        <div class="box" id="standard5" onclick="openStandard('standard5')">Standard 5</div>
+        <div class="box" id="standard6" onclick="openStandard('standard6')">Standard 6</div>
+        <div class="box" id="standard7" onclick="openStandard('standard7')">Standard 7</div>
+        <div class="box" id="standard8" onclick="openStandard('standard8')">Standard 8</div>
+    </div>
+</div>
+
+<div class="welcom">
+    <h1>Welcome To Shree Khorda Primary School, Khorda</h1>
+    <div>
+        <img src="1.jpg" alt="School" class="photog">
+        <p  id="wel">શ્રી ખોરડા પ્રાથમિક શાળા આપનું હાર્દિક સ્વાગત કરે છે સાથે એસ. એમ. સી ખોરડા દ્વારા સંચાલિત જે ગુણવત્તાસભર શિક્ષણ, સહાભ્યાસિક પ્રવૃત્તિઓ, પ્રવૃત્તિમંડળો તેમજ રમત-ગમતની સુવિધાઓ ઉપલબ્ધ કરાવામાં આવશે.</p>
+    </div>
+</div>
+<div class="container">
+    <div class="noticeboard">
+        <div>
+            <h2>Notice Board</h2>
+        </div>
+       
+        <ul>
+            <li>
+                <i class="fa-solid fa-arrow-right"></i>   <a class="pravesh" href="khorda.pdf", target="_blank">પ્રવેશપરીક્ષા ના ફોર્મ ભરવાની પ્રક્રિયા ચાલુ થઈ ગઈ છે. અહીં થી ફોર્મ ડાઉનલોડ કરી શકો છો.
+                </a>
+            </li>
+            <li>
+                <i class="fa-solid fa-arrow-right"></i>    <a>પ્રવેશ પરીક્ષા તારીખે લેવાશે.</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="principal">
+        <div class="principal-info">
+            <img src="principal.jpg" alt="Principal">
+            <h2>Principal</h2>
+            <h3>D.M.Prajapati</h3>
+            <p>PhD in Education</p>
+            <p>20 years of experience</p>
+        </div>
+    </div>
+</div>
+<div class="meet_teacher">
+    <a href="C:\Users\ddpra\OneDrive\Desktop\darshan\C++\teachers.html" target="_blank" class="meet_t">Meet Our Teachers</a>
+    <div class="teachers">
+        <div class="teacher">
+            <img src="1.jpg" alt="Teacher 1">
+            <h2>Falakben Bhavsar</h2>
+            <p>Mathematics Teacher</p>
+        </div>
+        <div class="teacher">
+            <img src="2.jpg" alt="Teacher 2">
+            <h2>D.M.Prajapati</h2>
+            <p>Science Teacher</p>
+        </div>
+        <div class="teacher">
+            <img src="3.jpg" alt="Teacher 3">
+            <h2>K.P.Panchal</h2>
+            <p>English Teacher</p>
+        </div>
+    </div>
+</div>
+<div class="ayush">
+    <div class="top-student" onclick="openWebsite()">
+        <h2>Top Student</h2>
+        <div class="student-info">
+            <div class="student-image">
+                <img src="top.jpg" alt="Top Student">
+            </div>
+            <div class="student-details">
+                <h3>Ayush Prajapati</h3>
+                <p>Grade: 12</p>
+                <p>Score: 98%</p>
+                <p>Extracurriculars: Debate Club, Science Club</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+    <div class="photogallary">
+        <div>
+            <h2><a href="C:\Users\ddpra\OneDrive\Desktop\darshan\C++\photo.html" target="_blank" class="meet_t">Our Photogallary</a></h2>
+        </div>
+        <DIV >
+            <img src="1.jpg" alt="Photo 1" class="photog">
+            <img src="2.jpg" alt="Photo 1" class="photog">
+            <img src="3.jpg" alt="Photo 1" class="photog">
+            <img src="1.jpg" alt="Photo 1" class="photog">
+        </DIV>
+    </div>
+    
+    <footer>
+        <div class="last">
+            <div>
+               <h5 class="links_imp">CONTACT US</h5>
+              <div class="contact"> <P><u><B>Addrese:-</B></u>To:-Khorda,Ta:-Tharad,</P>
+               <p id="dis">Dis.:-Banashkantha,385563,Gujarat</p>
+               <p><u><b>Email:-</b></u>dmprajapati6@gmail.com</p>
+               <p><u><b>Contact:-</b></u>9925650195,6353349569</p>
+               <p><u><B>Website:-</B></u>www.khordaprimaryschool.com</p>
+           </div>
+            </div>
+       <div>
+           <h5 class="links_imp">
+               FAVOURITES
+           </h5>
+           <ul class="IMP">
+               <li>Home</li>
+                <hr>
+               <li>History</li>
+               <hr>
+               <li>Facilities</li>
+               <hr>
+               <li>Contact Us</li>
+               <hr>
+           </ul>
+       </div>
+       <div>
+           <h5 class="links_imp">IMPORTAN LINK</h5>
+           <ul class="IMP">
+               <li>Home</li>
+                <hr>
+               <li>About Us</li>
+               <hr>
+               <li>Contact Us</li>
+               <hr>
+           </ul>
+       </div>
+       <div>
+           <h5 id="follow">FOLLOW US</h5>
+           <a href="https://www.instagram.com/itz_darshan_1030/?hl=en", class="remove", target="_blank"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://www.youtube.com/", class="remove", target="_blank"><i class="fa-brands fa-youtube"></i></a>
+           <a href="https://www.facebook.com/", class="remove", target="_blank"><i class="fa-brands fa-facebook"></i></a>
+       </div>
+   </div>
+   <DIV class="last1">
+     <div class="copy">
+        <a>Copyright © Khorda Primary School</a>
+        <br>
+        <a>Design By: <a href=# id="design">D.D.Prajapati</a></a>
+     </div>
+     <div class="term">
+        <a href="#">Tearm and Condition</a> <span class="line">&#124;</span>
+        <a href="#">Privacy Policy</a> <span class="line">&#124;</span>
+        <a href="yp.html" target="_blank">Refund & Cancellation Policy</a>
+     </div>
+   </DIV>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
