@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>School Facilities</title>
+    <style>
+        /* Basic styling for demonstration */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E9F1FA
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-out;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color:#edf4fb;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+            transition: transform 0.3s ease;
+        }
+        li:hover {
+            transform: scale(1.05);
+        }
+        li:nth-child(odd) {
+            color:#01427a;
+        }
+        li:nth-child(even) {
+            color: #01427a;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+.last{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    background-color: #01427a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 100px;
+    /* padding-left: 20px;
+    padding-right: 50px; */
+}
+.IMP{
+    text-align: start;
+    align-items: start;
+    margin-left: -20px;
+}
+hr {
+    border: none;
+    border-top: 1px dotted #f00;
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 170%;
+    align-items: center;
+    margin-left: -30px;
+  }
+  .contact{
+    text-align: start;
+  }
+  #dis{
+    margin-top: -14px;
+  }
+  .remove{
+    color: #fff;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+  #follow{
+    text-align: start;
+    font-size: 17px;
+  }
+  .links_imp{
+    font-size: 17px;
+  }
+  .pravesh{
+    text-decoration: none;
+    color: #01427a;
+  }
+  h2{
+    text-align: center;
+  }
+  .pg{
+    color: #01427a;
+    text-align: center;
+  }
+  .title-bar {
+    background-color: #2c3e50; /* Dark Blue */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: ; */
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    height: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+.jay{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: #2c3e50;
+}
+.logo img {
+    max-height: 70px;
+    align-items: center;
+}
+
+.school-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+#font{
+    font-size: 15px;
+    text-align: center;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ffd700; /* Yellow on hover */
+}
+
+  
+  header h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+  /* Font Awesome icons (replace with your link if needed) */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #F8F9FA; /* Light background color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; Fix the navbar to the top */
+    /* top: 0; */
+    width: 100%; 
+    z-index: 10; /* Ensure the navbar stays on top of content */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:#bbb; /* Main navbar text color */
+    font-weight: bold;
+    padding: 10px 15px; /* Adjust link padding as needed */
+}
+
+.nav-links a:hover {
+    color:#01427a; /* Hover effect color */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-toggle:after {
+    /* content: ""; */
+    font-family: FontAwesome;
+    margin-left: 5px;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; 
+    list-style: none;
+    padding: 0;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu a {
+    display: block;
+    text-decoration: none;
+    color: #333; 
+}
+
+.dropdown-menu a:hover {
+    background-color: #F1F1F1; 
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.menu-toggle {
+    display: none; 
+    cursor: pointer;
+}
+
+.menu-toggle i { 
+    font-size: 24px; /* Adjust icon size as needed */
+}
+
+@media (max-width: 768px) { 
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #F8F9FA; 
+        display: none; 
+    }
+
+    .nav-links.active {
+        display: block; 
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+}
+/* ... (Other styles from previous example) ... */
+
+header {
+    display: flex;
+    flex-direction: column; /* Stack heading and navbar vertically */
+    align-items: center;
+}
+.bottom-navbar {
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* width: 100%; */
+    font-size: small;
+    font-weight: 400;
+    background-color:#2c3e50; /* Example color */
+    color: #fff;
+    display: flex; 
+    align-items: center;
+    padding: 1px 0;
+    padding-left: 200px;
+    margin-top: -10px;
+}
+
+.navbar-item {
+    display: block; 
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 1px;
+    background-color:#2f5b78; /* Example background for boxes */
+    margin: 0 0.5px;
+    transition: background-color 0.3s ease; 
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2); 
+    /* align-items: center; */
+}
+
+.navbar-item:hover { 
+    background-color:#01427a; 
+} 
+.line{
+    margin-right: -10px;
+    margin-left: 10px;
+}
+.last{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    background-color: #01427a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 100px;
+    /* padding-left: 20px;
+    padding-right: 50px; */
+}
+.IMP{
+    text-align: start;
+    align-items: start;
+    margin-left: -20px;
+}
+hr {
+    border: none;
+    border-top: 1px dotted #f00;
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 170%;
+    align-items: center;
+    margin-left: -30px;
+  }
+  .contact{
+    text-align: start;
+  }
+  #dis{
+    margin-top: -14px;
+  }
+  .remove{
+    color: #fff;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+  #follow{
+    text-align: start;
+    font-size: 17px;
+  }
+  .links_imp{
+    font-size: 17px;
+  }
+  .pravesh{
+    text-decoration: none;
+    color: #01427a;
+  }
+  h2{
+    text-align: center;
+  }
+ 
+    </style>
+</head>
+<body>
+    <div class="title-bar">
+        <div class="logo">
+            <img src="IITJ.png" alt="School Logo">
+        </div>
+        <div class="school-name">
+           Shree Khorda Primary School, Khorda
+           <br>
+           <p id="font">Empowering Minds, Building Futures,</p>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a> <span class="line">&#124;</span>
+            <a href="#">About</a> <span class="line">&#124;</span>
+            <a href="yp.html" target="_blank">Yearly Planning</a> <span class="line">&#124;</span>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="heading-navbar"> 
+   </div> 
+   <nav class="bottom-navbar"> 
+        <a href="#" class="navbar-item" target="_blank">HOME</a>
+        <a href="#" class="navbar-item" target="_blank">ABOUT US</a>
+        <a href="C:\Users\ddpra\OneDrive\Desktop\darshan\C++\student_zone.html" class="navbar-item" target="_blank">STUDENT ZONE</a>
+        <a href="C:\Users\ddpra\OneDrive\Desktop\darshan\C++\teachers.html" class="navbar-item" target="_blank">TEACHERS</a>
+        <a href="khorda.pdf" class="navbar-item">ONLINE FORM</a> 
+        <a href="C:\Users\ddpra\OneDrive\Desktop\darshan\C++\photo.html" class="navbar-item" target="_blank">PHOTO-GALLRY</a>
+        <a href="#" class="navbar-item" target="_blank">FEEDBACK</a>
+        <a href="#" class="navbar-item" target="_blank">CONTACT US</a> 
+    </nav>
+    <div class="container">
+        <h1>School Facilities</h1>
+        <ul>
+            <li><strong>Library:</strong> Our school library is equipped with a wide range of books, reference materials, and digital resources to support students' learning.</li>
+            <li><strong>Computer Lab:</strong> We have a state-of-the-art computer lab with high-speed internet access and the latest software for students to enhance their technological skills.</li>
+            <li><strong>Science Lab:</strong> Our fully equipped science lab allows students to engage in hands-on experiments and explore various scientific concepts.</li>
+            <li><strong>Sports Facilities:</strong> We offer a variety of sports facilities including a basketball court, football field, and indoor gymnasium to promote physical fitness and teamwork.</li>
+            <li><strong>Art Studio:</strong> Our art studio provides students with the space and resources to unleash their creativity through painting, drawing, sculpture, and more.</li>
+            <li><strong>Auditorium:</strong> Our school auditorium hosts various events, performances, and presentations, providing students with a platform to showcase their talents.</li>
+            <li><strong>Cafeteria:</strong> The school cafeteria offers nutritious and delicious meals for students and staff, fostering a healthy eating environment.</li>
+            <li><strong>Outdoor Spaces:</strong> We have well-maintained outdoor spaces including gardens and seating areas, providing students with opportunities for relaxation and outdoor learning.</li>
+        </ul>
+    </div>
+       
+    <div class="last">
+        <div>
+           <h5 class="links_imp">CONTACT US</h5>
+          <div class="contact"> <P><u><B>Addrese:-</B></u>To:-Khorda,Ta:-Tharad,</P>
+           <p id="dis">Dis.:-Banashkantha,385563,Gujarat</p>
+           <p><u><b>Email:-</b></u>dmprajapati6@gmail.com</p>
+           <p><u><b>Contact:-</b></u>9925650195,6353349569</p>
+           <p><u><B>Website:-</B></u>www.khordaprimaryschool.com</p>
+       </div>
+        </div>
+   <div>
+       <h5 class="links_imp">
+           FAVOURITES
+       </h5>
+       <ul class="IMP">
+           <li>Home</li>
+            <hr>
+           <li>History</li>
+           <hr>
+           <li>Facilities</li>
+           <hr>
+           <li>Contact Us</li>
+           <hr>
+       </ul>
+   </div>
+   <div>
+       <h5 class="links_imp">IMPORTAN LINK</h5>
+       <ul class="IMP">
+           <li>Home</li>
+            <hr>
+           <li>About Us</li>
+           <hr>
+           <li>Contact Us</li>
+           <hr>
+       </ul>
+   </div>
+   <div>
+       <h5 id="follow">FOLLOW US</h5>
+       <a href="https://www.instagram.com/itz_darshan_1030/?hl=en", class="remove", target="_blank"><i class="fa-brands fa-instagram"></i></a>
+       <a href="https://www.youtube.com/", class="remove", target="_blank"><i class="fa-brands fa-youtube"></i></a>
+       <a href="https://www.facebook.com/", class="remove", target="_blank"><i class="fa-brands fa-facebook"></i></a>
+   </div>
+   
+</div>
+</body>
+</html>

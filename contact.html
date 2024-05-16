@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-box {
+        width: 80%;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        position: relative;
+    }
+
+    .contact-box:hover {
+        transform: scale(1.1);
+    }
+
+    .contact-box-icon {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .contact-box-content {
+        margin-left: 40px;
+    }
+
+    .contact-box p {
+        margin: 5px 0;
+    }
+
+    .address { background-color: #fff; }
+    .email { background-color: #e6f7ff; }
+    .phone { background-color: #ccffcc; }
+
+    .animation {
+        animation: slidein 1s forwards;
+    }
+
+    @keyframes slidein {
+        from {
+            opacity: 0;
+            transform: translateY(-50%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+</head>
+<body>
+
+<h2>Contact Us</h2>
+
+<div class="container">
+    <div class="contact-info">
+        <div class="contact-box address animation">
+            <div class="contact-box-icon">
+                <i class="fa-solid fa-location-dot" width="30"></i>
+            </div>
+            <div class="contact-box-content">
+                <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+            </div>
+        </div>
+        <div class="contact-box email animation">
+            <div class="contact-box-icon">
+                <i class="fa-regular fa-envelope" width="30"></i>
+            </div>
+            <div class="contact-box-content">
+                <p><strong>Email:</strong> info@example.com</p>
+            </div>
+        </div>
+        <div class="contact-box phone animation">
+            <div class="contact-box-icon">
+                <i class="fa-solid fa-phone" width="30"></i>        
+            </div>
+            <div class="contact-box-content">
+                <p><strong>Phone:</strong> +1234567890</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
